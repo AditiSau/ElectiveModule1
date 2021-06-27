@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" >
+		<title>Login Form</title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+			}
+			a{
+				text-decoration: none;
+				margin-left: 10px;
+				
+			}
+
+
+			body{
+				background-image:linear-gradient( rgba(0,0,0,0.6),rgba(255, 255, 255, 0.6) ), url('/Public/image/load.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 100% 100%;
+			
+				width: 100%;
+				height: 100vh;
+			}
+			button{
+
+				  background-image: linear-gradient( to right, #26B8E3, #0a6e23);
+			}
+
+			form{
+				margin-top: 100px;
+				border-radius: 10px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-11 col-md-3 col-lg-3"></div>
+				<div class="col-11 col-md-6 col-lg-6">
+					
+					<form class="bg-light px-5 pb-4 ">
+
+						<h1 class="text-center py-4 text-dark">Login Form</h1>
+						<div class="mb-3">
+							
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email / UserName" name="email">
+							<div id="emailHelp" class=" text-light">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-3">
+							
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg w-100" name="login" href="about.html">Login</button>
+
+				
+						 <div class="my-4 ">
+
+							<span class="float-left h5">Not a member?</span> <h5 class=""><a href="Signup.html"> Sign up Now</a></h5>
+
+						</div>
+ 
+						
+					</form>
+				</div>
+
+
+				<div class="col-11 col-md-3 col-lg-3"></div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> Sign in Registation Form</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+
+		}
+
+		a {
+			text-decoration: none;
+			margin-left: 10px;
+		}
+
+		:root {
+
+			--bg-color: linear-gradient(to right, #26e34f, #1ba1fa);
+			--bg-hover: linear-gradient(to right, #1ba8fa, #2ce326);
+
+
+
+		}
+
+		body {
+
+			background-image: linear-gradient(rgba(216, 47, 47, 0.6), rgba(224, 198, 47, 0.6)),
+				url('/Public/image/x0.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 100% 100%;
+			background-attachment: fixed;
+
+			width: 100%;
+			height: 100%;
+		}
+
+		button {
+
+			background-image: var(--bg-color);
+		}
+
+		button:hover {
+
+			background-image: var(--bg-hover);
+
+
+		}
+
+		form {
+
+			border-radius: 10px;
+			/*width: 60%;*/
+			float: right;
+			/*text-align: left;*/
+		}
+
+		.wrap {
+			position: relative;
+		}
+
+		i {
+			position: absolute;
+			right: 10px;
+			top: 43px;
+			visibility: hidden;
+		}
+
+		i .success .fa-check-circle {
+
+			color: #2ecc71;
+			visibility: visible;
+
+		}
+
+		i.error .fa-exclamation {
+
+			color: #e74c3c;
+			visibility: visible;
+		}
+		.info
+		{
+			text-align: center;
+			color: white;
+			width:22%;
+			float: left;
+
+
+		}
+		.info li
+		{
+			font-size: 19px;
+
+		}
+		.info p
+		{
+			font-size: 13px;
+			backface-visibility: visible;
+		}
+
+		small {
+
+			color: #e74c3c;
+			position: absolute;
+			visibility: hidden;
+			bottom: -18px;
+			left: 0;
+		}
+
+		.error small {
+
+			visibility: visible;
+
+		}
+
+		label {
+
+			font-weight: 500;
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="info">
+		<h2>
+        Doctor's Name:
+    </h2>
+    <ul>
+        <li>Dr. S.M. Jha(MD)<p>[Saturday,Monday(6.00PM-9.00PM)]</p></li>
+        <li>Dr. Mohit Chawley(MBBS.)<p>[Saturday,Tuesday(3.00PM-7.00PM)]</p> </li>
+        <li>Dr. Md Tahrat Amin(MD)<p>[Wednesday,Friday(11.00AM-2.00PM)]</p></li> 
+        <li>Dr. Robina Perwez(MBBS.)<p>[Thrusday,Tuesday(3.00PM-7.00PM)]</p></li> 
+        <li>Dr. Sulekha Mitra(MD)<p>[Wednesday,Friday(6.00PM-9.00PM)]</p></li>
+         <li>Dr. Subhankar Bhattachariya(MBBS.)<p>[Thrusday,Monday(11.00AM-3.00PM)]</p></li>
+         <li>Dr. Pallavi Dutta(MD)<p>[Saturday,Monday(6.00PM-9.00PM)]</p></li>
+        <li>Dr. Md Iqbal Hussen(MBBS.)<p>[Saturday,Tuesday(3.00PM-7.00PM)]</p> </li>
+        <li>Dr. Sahima Ansari(MD)<p>[Wednesday,Friday(11.00AM-2.00PM)]</p></li> 
+        <li>Dr. Soumyaraj Banerjee(MBBS.)<p>[Thrusday,Tuesday(3.00PM-7.00PM)]</p></li> 
+        <li>Dr. Sudeshna Dalal(MD)<p>[Wednesday,Friday(6.00PM-9.00PM)]</p></li>
+         <li>Dr. Anuvab Chakraborty (MBBS.)<p>[Thrusday,Monday(11.00AM-3.00PM)]</p></li>
+    </ul></div>
+    <!--  <h2>Book Appoinment</h2> -->
+		<div class="row">
+
+			<div class="col-11 col-md-3 col-lg-3"></div>
+			<div class="col-11 col-md-6 col-lg-6">
+
+				<form class="bg-light px-5 my-5" action="https://indianhelpline.com/SUICIDE-HELPLINE/" method="POST" encrypt="multipart/form-data"
+					onsubmit="return validate();">
+
+
+					<h1 class="text-center my-5 pt-5 text-dark">Book Appoinment</h1>
+					<div class="mb-3 wrap">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+							placeholder="Email / UserName" name="txteemail">
+						<span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+						<span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+						<small>** Error Message</small>
+						<div id="emailHelp" class=" text-dark">We'll never share your email with anyone else.</div>
+					</div>
+					<div class="mb-3 wrap">
+						<label for="exampleInputname" class="form-label">Name</label>
+
+						<input type="text" class="form-control" id="exampleInputname" aria-describedby="emailHelp"
+							placeholder="Enter Name" name="txtename">
+						<span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+						<span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+						<small>** Error Message</small>
+
+					</div>
+
+
+					<div class="mb-3 wrap">
+						<label class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputpasswordd" placeholder="Password"
+							name="txtepassword">
+						<span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+						<span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+						<small>** Error Message</small>
+					</div>
+					<div class="mb-3 wrap">
+						<label class="form-label">Fixed the Date</label>
+						<input type="date" class="form-control" id="exampleInputdate" placeholder=""
+							name="txtedate">
+						<span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+						<span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+						<small>** Error Message</small>
+					</div>
+					<div class="mb-3 wrap">
+						<label class="form-label">Fixed the Time</label>
+						<input type="time" class="form-control" id="exampleInputtime" placeholder=""
+							name="txtetime">
+						<span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+						<span><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+						<!-- <small>** Error Message</small> -->
+					</div>
+
+					<br>
+
+
+					<button type="submit" class="btn btn-primary btn-lg w-100" name="submit">Submit</button>
+					<br><br>
+
+					<button type="reset" class="btn btn-primary btn-lg w-100 float-right ">Reset Data</button>
+
+					<div class="pb-5 mb-5  ">
+						<br><br><br><br>
+
+						<span class="float-left h5">If You are a member?</span>
+						<h5 class=""><a href="login.html"> Login</a></h5>
+
+
+					</div>
+
+
+				</form>
+			</div>
+			<div class="col-11 col-md-3 col-lg-3"></div>
+		</div>
+	</div>
+
+	<script>
+
+		function validate() {
+
+			var emailval = document.getElementById("exampleInputEmail1").value.trim();
+			var nameval = document.getElementById("exampleInputname").value.trim();
+			var addressval = document.getElementById("exampleInputaddress").value.trim();
+			var passwordval = document.getElementById("exampleInputpasswordd").value.trim();
+
+			// Email validate
+
+
+
+			// name validate
+
+			if (nameval === "") {
+				setErrormsg(name, " name can not be blank");
+			}
+			else if (nameval.length <= 2) {
+				setErrormsg(nameval, " name is more then 3 chractor");
+
+			}
+			else {
+				setSuccessmsg(nameval);
+			}
+
+		}
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
